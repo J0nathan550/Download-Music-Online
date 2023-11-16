@@ -6,6 +6,25 @@
     <RootNamespace>Download_Music_Online</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Company>J0nathan550</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ffmpeg.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="ffmpeg.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SpotifyExplode" Version="1.0.7" />
+    <PackageReference Include="xFFmpeg.NET" Version="7.2.0" />
+    <PackageReference Include="YoutubeExplode" Version="6.3.7" />
+  </ItemGroup>
 
 </Project>
